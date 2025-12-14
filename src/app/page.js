@@ -12,7 +12,7 @@ export default function page() {
     <div>
       <Preloader/>
       <Nav/>
-      <HeroSection/>
+      <Hero/>
        <MainFeature/>
       <Footer/>
     </div>
