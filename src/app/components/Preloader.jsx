@@ -26,14 +26,12 @@ const Preloader = ({ onComplete }) => {
       },
     });
 
-    // Name animation
     tl.fromTo(
       nameRef.current,
       { opacity: 0, y: 30, filter: "blur(10px)" },
       { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.8, ease: "power2.out" }
     );
 
-    // Progress bar animation
     tl.to(
       progressBarRef.current,
       {
@@ -50,7 +48,6 @@ const Preloader = ({ onComplete }) => {
       "-=0.4"
     );
 
-    // Percentage fade out
     tl.to(percentageRef.current, {
       opacity: 0,
       y: -10,
@@ -66,14 +63,11 @@ const Preloader = ({ onComplete }) => {
       ref={preloaderRef}
       className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black overflow-hidden"
     >
-      {/* Subtle atmospheric overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-black to-pink-900/10" />
 
-      {/* Floating glow orbs */}
       <div className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-purple-500/10 blur-[120px] animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-56 h-56 rounded-full bg-pink-500/10 blur-[100px] animate-pulse delay-1000" />
 
-      {/* Project Name */}
       <h1
         ref={nameRef}
         className="relative font-display text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-12 tracking-wider"
@@ -81,7 +75,6 @@ const Preloader = ({ onComplete }) => {
         QuantumSentinel
       </h1>
 
-      {/* Progress Section */}
       <div className="relative w-64 md:w-80">
         <div className="relative h-1 bg-white/20 rounded-full overflow-hidden">
           <div
@@ -105,8 +98,6 @@ const Preloader = ({ onComplete }) => {
         </div>
       </div>
 
-      {/* Corner Decorations */}
-      {/* TOP LEFT */}
 <div className="absolute top-8 left-8 w-16 h-16 pointer-events-none">
   <span className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500" />
   <span className="absolute top-0 left-0 w-[2px] h-full bg-gradient-to-b from-purple-500 via-pink-500 to-blue-500" />
