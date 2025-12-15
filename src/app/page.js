@@ -6,6 +6,7 @@ import Preloader from './components/Preloader'
 import About from './components/ui/About'
 import Features from './components/ui/Features'
 import OurQuality from './components/ui/OurQuality'
+import Working from './components/ui/Working'
 
 export default function page() {
   return (
@@ -14,8 +15,9 @@ export default function page() {
       <Nav/>
       <Hero/>
       <About/>
-       <Features/>
-       <OurQuality/>
+      <Features/>
+      <OurQuality/>
+      <Working/>
       <Footer/>
     </div>
   )

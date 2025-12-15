@@ -1,13 +1,48 @@
 "use client";
+import localFont from "next/font/local";
+
+const calSans = localFont({
+  src: "../../../../public/fonts/Fellix-Medium.ttf",
+  weight: "400",
+  style: "normal",
+});
 
 export default function OurQuality() {
   return (
     <section className="relative w-full bg-black text-white py-40 overflow-hidden">
-      <h2 className="text-center text-[44px] md:text-[56px] font-light leading-tight mb-36">
-        Intelligence That <br /> Detects Everything
-      </h2>
+
+      <div className="relative flex justify-center mb-36">
+        <div
+          className="
+            absolute
+            -top-[220%]
+            w-[1000px]
+            h-[1000px]
+            rounded-full
+            bg-[radial-gradient(circle,rgba(37,99,235,0.22),transparent_65%)]
+            blur-[2px]
+            z-0
+          "
+        />
+
+        <h2
+          className={`
+            ${calSans.className}
+            relative z-10
+            text-center
+            text-[61px]
+            leading-[60px]
+            font-normal
+            text-white
+          `}
+        >
+          Intelligence That <br />
+          Detects Everything
+        </h2>
+      </div>
 
       <div className="max-w-[1600px] mx-auto px-12 grid grid-cols-1 md:grid-cols-2 gap-40 items-start">
+
         <div className="relative flex flex-col items-center">
           <svg width="560" height="560" viewBox="0 0 560 560">
             <circle
@@ -46,7 +81,7 @@ export default function OurQuality() {
             </text>
           </svg>
 
-          <p className="mt-20 text-center text-[15px] leading-relaxed text-white/80 max-w-md">
+          <p className="mt-10 text-center text-[20px] leading-relaxed text-white/80 max-w-md">
             Of security threats were accurately classified <br />
             by our generative AI engine
           </p>
@@ -81,8 +116,9 @@ export default function OurQuality() {
               strokeWidth="1"
               opacity="0.25"
             />
+
             <text
-              x="270"
+              x="280"
               y="340"
               textAnchor="middle"
               fontSize="160"
@@ -93,11 +129,12 @@ export default function OurQuality() {
             </text>
           </svg>
 
-          <p className="mt-20 text-center text-[15px] leading-relaxed text-white/80 max-w-md">
+          <p className="mt-10 text-center text-[20px] leading-relaxed text-white/80 max-w-md">
             Proven intrusion detection performance <br />
             powered by generative intelligence
           </p>
         </div>
+
       </div>
     </section>
   );
