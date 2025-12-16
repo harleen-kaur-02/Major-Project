@@ -73,7 +73,7 @@ export default function OurQuality() {
               x="280"
               y="340"
               textAnchor="middle"
-              fontSize="160"
+              fontSize="150"
               fontWeight="300"
               fill="white"
             >
@@ -121,7 +121,7 @@ export default function OurQuality() {
               x="280"
               y="340"
               textAnchor="middle"
-              fontSize="160"
+              fontSize="150"
               fontWeight="300"
               fill="white"
             >
