@@ -76,8 +76,8 @@ export default function Footer() {
 
         <div className="flex justify-between items-end text-xs opacity-80 mt-16">
           <div>
-            <p className="italic">(socials)</p>
-            <p className="mt-1">IG &nbsp; VI &nbsp; FB</p>
+            <p className="italic">(Team Members)</p>
+            <p className="mt-1">Mayank &nbsp; Harleen &nbsp; Vanshika</p>
           </div>
 
           <div className="text-center">
