@@ -11,7 +11,7 @@ import Working from './components/ui/Working'
 export default function page() {
   return (
     <div>
-      <Preloader/>
+      {/* <Preloader/> */}
       <Nav/>
       <Hero/>
       <About/>

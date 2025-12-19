@@ -1,0 +1,22 @@
+"use client";
+import TopBar from "./TopBar";
+import StatCards from "./StatCards";
+import TrafficOverview from "./TrafficOverview";
+import ActivePorts from "./ActivePorts";
+import ThreatTable from "./ThreatTable";
+
+export default function Dashboard() {
+  return (
+    <div className="min-h-screen bg-[#0B1220] text-white p-6">
+      <TopBar />
+      <StatCards />
+
+      <div className="grid grid-cols-1 lg:grid-cols-[2.2fr_0.8fr] gap-6 mb-6">
+        <TrafficOverview />
+        <ActivePorts />
+      </div>
+
+      <ThreatTable />
+    </div>
+  );
+}
