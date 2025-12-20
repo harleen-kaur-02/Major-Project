@@ -7,7 +7,7 @@ export default function Nav() {
 
   const links = [
     { name: "Home", href: "/" },
-    { name: "Dashboard", href: "/dashboard" },
+    { name: "Dashboard", href: "/mlmodel" },
     { name: "About us", href: "/learn" },
   ];
 
