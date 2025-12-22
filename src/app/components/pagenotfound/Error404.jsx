@@ -23,7 +23,6 @@ export function Error404({
 
       <div className="flex flex-col items-center">
         <div className="relative mb-16">
-          {/* Rotating circular text */}
           <svg
             className="absolute -top-16 -left-12 w-[140px] h-[140px] pointer-events-none z-20 animate-spin-slow"
             viewBox="0 0 140 140"
@@ -47,7 +46,6 @@ export function Error404({
             </text>
           </svg>
 
-          {/* Postcard */}
           <div className="relative z-10">
             <div className="relative p-3 shadow-2xl rotate-[4deg] hover:rotate-0 transition-transform duration-300 bg-white">
               <div className="relative overflow-hidden bg-white">
@@ -59,7 +57,6 @@ export function Error404({
               </div>
             </div>
 
-            {/* Stamp waves */}
             <svg
               className="absolute -right-16 top-1/2 -translate-y-1/2 w-28 h-20"
               viewBox="0 0 100 60"
@@ -89,7 +86,6 @@ export function Error404({
           </div>
         </div>
 
-        {/* Text content */}
         <div className="text-center max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-doto mb-6 leading-tight text-white">
             {heading}

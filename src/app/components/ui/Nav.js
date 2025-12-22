@@ -7,7 +7,7 @@ export default function Nav() {
 
   const links = [
     { name: "Home", href: "/" },
-    { name: "Dashboard", href: "/mlmodel" },
+    { name: "Dashboard", href: "/dashboard" },
     { name: "About us", href: "/learn" },
   ];
 
@@ -15,12 +15,10 @@ export default function Nav() {
     <nav className="w-full fixed top-0 left-0 z-50 bg-transparent text-white">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         
-        {/* LOGO */}
         <h1 className="text-lg font-semibold">
           QuantumSentinel IDS
         </h1>
 
-        {/* ================= DESKTOP NAV ================= */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
           {links.map((item) => (
             <Link
@@ -34,7 +32,6 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* ================= DESKTOP LOGIN ================= */}
         <div className="hidden md:flex">
           <Link
             href="/login"
@@ -44,7 +41,6 @@ export default function Nav() {
           </Link>
         </div>
 
-        {/* ================= HAMBURGER (MOBILE) ================= */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden flex flex-col gap-[5px]"
@@ -67,7 +63,6 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* ================= MOBILE MENU ================= */}
       <div
         className={`md:hidden absolute top-16 left-0 w-full bg-black/90 backdrop-blur-md transition-all duration-300 ${
           open ? "opacity-100 visible" : "opacity-0 invisible"

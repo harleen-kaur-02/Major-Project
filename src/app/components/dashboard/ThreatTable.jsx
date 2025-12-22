@@ -78,7 +78,7 @@ export default function ThreatTable() {
             ].map((row, i) => (
               <tr
                 key={i}
-                className="border-t border-white/[0.04] text-white/70 hover:bg-white/[0.02]"
+                className="border-t cursor-pointer border-white/[0.04] text-white/70 hover:bg-white/[0.02]"
               >
                 <td className="px-4 py-5">
                   {row.level}

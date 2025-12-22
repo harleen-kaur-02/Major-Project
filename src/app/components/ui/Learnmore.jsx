@@ -14,7 +14,7 @@ const DATA = [
 {
   title: "#1 Who we are",
   paragraph:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quos! Fugiat earum maiores nostrum dolores ipsum maxime aut vitae atque tempora non rem eveniet, tempore sed obcaecati iure minima rerum consequuntur officiis dolorum corporis. Reiciendis nesciunt dolor neque quibusdam. Rem, voluptatum quam necessitatibus molestias vel qui quidem nihil, atque ad, magni voluptate. Vitae laudantium dignissimos eos adipisci quae quasi, quibusdam odit natus iusto iure commodi nobis! Itaque nisi deserunt ut neque? Sunt voluptas excepturi odit, hic porro nam repudiandae beatae, ab accusantium eius aliquid molestias dignissimos quam nihil laboriosam vel laborum ratione quo mollitia ut maiores voluptatem consequuntur. Consequuntur rerum nihil illo aperiam, sequi in aspernatur iure quisquam voluptatum aut, necessitatibus velit aliquid dolores blanditiis, at cupiditate minus. Suscipit, ipsum ad quaerat libero exercitationem eius quam nulla debitis cum numquam ipsa, quas asperiores blanditiis natus praesentium recusandae soluta veritatis aspernatur odit assumenda odio sit, expedita culpa? Quia delectus doloremque iste porro obcaecati tempore ab molestiae blanditiis nam ducimus labore, mollitia quae unde animi quis iusto omnis sequi libero commodi. Quos enim quam nihil. Quis, nobis illo nam dolore ut labore distinctio odio fuga alias error repudiandae animi nihil voluptatibus voluptates dolorem delectus sequi pariatur aliquid mollitia eum magnam quam, tempore tenetur expedita. Debitis, ratione, quos quo veniam aspernatur commodi earum veritatis quaerat facilis nihil libero laudantium,",
+    "QuantumSentinel IDS is a forward-looking cybersecurity initiative focused on building an intelligent and reliable Intrusion Detection System. We are a team driven by curiosity, innovation, and a strong interest in secure system design. This major project is aimed at detecting, analyzing, and responding to suspicious network activities in real time using modern computing and security principles. QuantumSentinel IDS emphasizes accuracy, scalability, and performance, ensuring robust protection against evolving cyber threats. Through this project, we aim to bridge theoretical knowledge with practical implementation, delivering a solution that reflects industry-relevant security practices and a deep understanding of network defense mechanisms.",
   codeTitle: "// Support",
   code: 'const support = "24/7 Help";',
 },
@@ -71,9 +71,8 @@ export default function LearnMore() {
 
     return (
         <div className="relative min-h-screen bg-black text-white overflow-x-hidden">
-            {/* ================= RIGHT BOTTOM PANEL ================= */}
+            {/* RIGHT BOTTOM PANEL */}
             <div className="fixed bottom-6 right-6 lg:bottom-8 lg:right-8 w-[260px] lg:w-[300px] z-50">
-                {/* Code Card */}
                 <div className="bg-[#0b0b0b] rounded-lg px-3 py-3 shadow-lg">
                     <div className="flex items-center justify-between mb-1">
                         <span className="text-[10px] text-white/40">
@@ -94,7 +93,7 @@ export default function LearnMore() {
                     </pre>
                 </div>
 
-                {/* ================= BAR ================= */}
+                {/* BAR */}
                 <div className="mt-2 bg-[#0b0b0b] rounded-lg h-8 relative overflow-hidden px-2">
                     <div className="absolute inset-0 flex items-center justify-between">
                         {Array.from({ length: 24 }).map((_, i) => (
@@ -110,7 +109,7 @@ export default function LearnMore() {
                 </div>
             </div>
 
-            {/* ================= LEFT CONTENT ================= */}
+            {/* LEFT CONTENT */}
             <div className="max-w-screen-lg xl:max-w-3xl mt-20 mx-auto px-6">
                 {DATA.map((item, index) => (
                     <section

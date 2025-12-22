@@ -7,7 +7,7 @@ import ThreatTable from "./ThreatTable";
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-[#0B1220] text-white p-6">
+    <div className="min-h-screen bg-black text-white p-6">
       <TopBar />
       <StatCards />
 

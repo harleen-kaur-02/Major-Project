@@ -8,7 +8,7 @@ export default function TopBar() {
   return (
     <div className="flex items-center justify-between mb-6">
       <div className="flex items-center gap-4">
-        <div className="w-40 h-8 rounded-full bg-blue-500 flex items-center justify-center font-bold">
+        <div className="w-40 h-8 rounded-full bg-blue-800 flex items-center justify-center font-bold">
           QuantumSentinel
         </div>
 
