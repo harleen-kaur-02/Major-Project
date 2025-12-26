@@ -2,7 +2,8 @@
 "use client";
 import Link from "next/link";
 import { Geist } from "next/font/google";
-import SignupButton from "./SignupButton";
+import GetStatButton from "./herobuttons/GetStatButton";
+import LearnMoreButton from "./herobuttons/LearnMoreButton";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -77,8 +78,10 @@ export default function Hero() {
               Get Started
             </Link>
 
+            {/* <GetStatButton/> */}
+
             <Link
-              href="/learn"
+              href="/LearnMoreButton"
               className="
                 flex-1 sm:flex-none
                 text-center
@@ -95,6 +98,8 @@ export default function Hero() {
             >
               Learn More
             </Link>
+
+            {/* <LearnMoreButton/> */}
           </div>
 
           <p className="text-gray-400 mt-6 text-sm flex items-center gap-2">

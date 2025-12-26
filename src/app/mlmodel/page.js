@@ -147,22 +147,11 @@
 //     </main>
 //   );
 // }
-
-import { Error404 } from "../components/pagenotfound/Error404";
-
+import NotFoundPage from "../components/pagenotfound/NotFoundPage";
 export default function Page() {
   return (
     <>
-      <Error404
-        postcardImage="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/statue-of-liberty-oil-pastel-MndxxUm4uk78xLAAKqtCFXH2HmNn0h.jpg"
-        postcardAlt="New York City Postcard with Statue of Liberty"
-        curvedTextTop="Feature"
-        curvedTextBottom="In Progress In Progress Check"
-        heading="(404) We’re currently working on this feature."
-        subtext="This section is under active development. Please check back soon — we’re building something meaningful here."
-        backButtonLabel="Back to Home"
-        backButtonHref="/"
-      />
+      <NotFoundPage/>
     </>
   );
 }
