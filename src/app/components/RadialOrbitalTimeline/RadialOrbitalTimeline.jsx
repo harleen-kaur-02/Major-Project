@@ -69,17 +69,18 @@ export default function RadialOrbitalTimeline({ timelineData }) {
   };
 
   const calculateNodePosition = (index, total) => {
-    const angle = ((index / total) * 360 + rotationAngle) % 360;
-    const radius = 160; // ↓ reduced radius
-    const rad = (angle * Math.PI) / 180;
+  const angle = ((index / total) * 360 + rotationAngle) % 360;
+  const radius = 160; // ↓ reduced radius
+  const rad = (angle * Math.PI) / 180;
 
-    return {
-      x: radius * Math.cos(rad),
-      y: radius * Math.sin(rad),
-      zIndex: Math.round(100 + 50 * Math.cos(rad)),
-      opacity: Math.max(0.45, Math.min(1, 0.5 + 0.5 * Math.sin(rad))),
-    };
+  return {
+    // Add Math.round() to these two lines:
+    x: Math.round(radius * Math.cos(rad) * 1000) / 1000,
+    y: Math.round(radius * Math.sin(rad) * 1000) / 1000,
+    zIndex: Math.round(100 + 50 * Math.cos(rad)),
+    opacity: Math.max(0.45, Math.min(1, 0.5 + 0.5 * Math.sin(rad))),
   };
+};
 
   const getRelatedItems = (id) =>
     timelineData.find((i) => i.id === id)?.relatedIds || [];
